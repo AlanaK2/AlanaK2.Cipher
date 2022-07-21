@@ -4,14 +4,20 @@
 */
 
  const cipher = {encode: function(texto, offset){
-    return ((texto.charCodeAt()-65+offset)% 26)+65
-    let resultado= encode(texto, offset)
-    alert(resultado)
- }
+     //let resultado = encode(texto, offset)
+     
+     let newText = ""
+     let code= texto.charCodeAt()   
+    //  newText = (texto.fromCharCode(resultado))
+    // return ((code-65+offset)% 26)+65 
+    return alert (newText+=String.fromCharCode(((code-65+offset)%26)+65))
+    
     
 }
-newText = (texto.fromCharCode(resultado))
-alert(newText)
+ }
+ 
+
+
 
 export default cipher;
 

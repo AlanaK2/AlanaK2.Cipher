@@ -7,7 +7,9 @@ btnCodificar.addEventListener("click", function(){
     const texto= mensagem.value
     const offset= deslocamento.value
  cipher.encode(texto,offset)
+
 })
+
 
 btnDecodificar.addEventListener("click", function(){
     const texto= mensagem.value
