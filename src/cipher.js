@@ -3,18 +3,30 @@
 {return ((texto.charCodeAt()-65+offset) % 26) + 65}
 */
 
- const cipher = {encode: function(texto, offset){
-     //let resultado = encode(texto, offset)
-     
+ const cipher = {encode: function(texto, offset){     
      let newText = ""
      let code= texto.charCodeAt()   
-    //  newText = (texto.fromCharCode(resultado))
-    // return ((code-65+offset)% 26)+65 
-    return alert (newText+=String.fromCharCode(((code-65+offset)%26)+65))
+     if (texto=="") {
+        return alert("Escreva a sua mensagem!")
+     }
+     else {
+        return alert (newText+=String.fromCharCode(((code-65+offset)%26)+65))}
+     },
+      decode: function(texto,offset){
+        let newText= ""
+        let dec= texto.charCodeAt()
+        if (texto=="")
+         {
+        return alert("Escreva a sua mensagem!")
+        }
+        else { return alert (newText+=String.fromCharCode(((dec-65-offset)%26)+65))
+
+        }   
+       }
+      }
+        
     
-    
-}
- }
+ 
  
 
 
